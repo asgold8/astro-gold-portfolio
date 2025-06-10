@@ -3,6 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import LandingPage from "../components/LandingPage";
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -13,18 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <body>
     <Header />
     <main>
-      <h1>🧑‍🚀 Hello!</h1>
-      <p>
-        Welcome to my website! This was built using <a
-          href="https://astro.build/">Astro</a
-        >.
-      </p>
-      <p>
-        I am a software engineer that's always looking to learn new things and
-        build cool projects. You can find my projects on the <a href="/projects"
-          >projects page</a
-        >.
-      </p>
+      <LandingPage client:load />
     </main>
     <Footer />
   </body>
