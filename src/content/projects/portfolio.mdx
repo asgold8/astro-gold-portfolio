@@ -1,0 +1,26 @@
+---
+title: "Astro Portfolio"
+description: "Description of the portfolio."
+pubDate: "Jun 09 2025"
+heroImage: "/blog-placeholder-3.jpg"
+---
+
+## What led to creating this portfolio?
+
+I originally had set up a React SPA using create-react-app in 2020 and hosted it on GitLab pages to leverage the free CI/CD. So Imagine my surprise when I tried to update it in 2025, the pipeline kept failing because of how outdated it was. I spent a frustrating amount of time trying to upgrade the packages, to upgrade the tooling from CRA to Vite, to upgrade from SemanticUI to TailwindCSS, npm to yarn, and regardless, the app continued to fail to build. I think decided to migrate to GitHub pages hoping for a similar workflow to minimize time spent on migrating code.
+
+While I was able to successfully deploy it, the workflow was still strange -- I needed the help of a package called gh-pages which builds the app onto a branch called gh-pages, which in turn, triggers the deployment. This, to me, feels very clunky. To compound on the clunkiness, my old portfolio looks like this:
+
+import MarkdownImage from "../../components/MarkdownImage.astro";
+import oldPortfolio from "../../../public/old-portfolio.png";
+
+<MarkdownImage
+  src="../../../public/old-portfolio.png"
+  alt="Screenshot of old portfolio"
+  width="300"
+  height="300"
+></MarkdownImage>
+
+And that was the final push for me to explore some other hosting platforms and tech to stay ahead of the curve before committing even more time reworking the appearance.
+
+That's where CloudFlare and Astro comes in! I'm a big fan of trying out new tech, so I put on my space suit and took off!

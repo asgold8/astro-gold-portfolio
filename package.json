@@ -1,8 +1,8 @@
 {
   "name": "astro-gold-portfolio",
-  "description": "Build a personal website, blog, or portfolio with Astro.",
+  "description": "Alex G.'s Portfolio built with Astro",
   "cloudflare": {
-    "label": "Astro Framework Starter",
+    "label": "Astro Portfolio",
     "products": [
       "Workers"
     ],
@@ -22,6 +22,8 @@
     "typescript": "5.8.3"
   },
   "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
     "wrangler": "4.16.1"
   },
   "scripts": {
