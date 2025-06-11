@@ -61,8 +61,8 @@ const LandingPage = () => {
           <a href="https://astro.build/">Astro</a>.
         </p>
         <p>
-          I am a software engineer that's always looking to learn new things and
-          build cool projects. You can find my projects on the{" "}
+          I am a software engineer with a passion for continuous learning and
+          building interesting projects. Explore my work on the{" "}
           <a href="/projects">projects page</a>.
         </p>
         <motion.img
